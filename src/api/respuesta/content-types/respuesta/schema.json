@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "respuestas",
+  "info": {
+    "singularName": "respuesta",
+    "pluralName": "respuestas",
+    "displayName": "respuestas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "respuesta": {
+      "type": "richtext"
+    },
+    "pregunta": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pregunta.pregunta",
+      "inversedBy": "respuesta"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
