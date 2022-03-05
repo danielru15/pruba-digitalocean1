@@ -1,9 +1,4 @@
-proyecto strapi con twilio , mailgun , cloudinary
-
-para twilio , mailgun u otro provedor crear donde se va usar en content-types
-un archivo lifecycles.js y poner
-
-<p>module.exports = {
+module.exports = {
     async afterCreate(event) {
         const {result} = event
         const client = require('twilio')(
@@ -35,4 +30,5 @@ un archivo lifecycles.js y poner
         }
 
     }
-   </p>
+    
+}

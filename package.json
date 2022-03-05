@@ -12,9 +12,12 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.1",
     "@strapi/plugin-users-permissions": "4.1.1",
+    "@strapi/provider-email-mailgun": "^4.1.2",
+    "@strapi/provider-upload-cloudinary": "^4.1.2",
     "@strapi/strapi": "4.1.1",
     "pg": "^8.7.3",
-    "sqlite3": "5.0.2"
+    "sqlite3": "5.0.2",
+    "twilio": "^3.75.0"
   },
   "author": {
     "name": "A Strapi developer"

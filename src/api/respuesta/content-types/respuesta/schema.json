@@ -15,16 +15,16 @@
     "respuesta": {
       "type": "richtext"
     },
-    "pregunta": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::pregunta.pregunta",
-      "inversedBy": "respuesta"
-    },
     "admin_user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "admin::user"
+    },
+    "pregunta": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pregunta.pregunta",
+      "mappedBy": "respuesta"
     }
   }
 }

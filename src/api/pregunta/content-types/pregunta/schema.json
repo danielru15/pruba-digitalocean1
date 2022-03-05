@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "pregunta": {
-      "type": "text"
+      "type": "string"
     },
     "users_permissions_user": {
       "type": "relation",
@@ -25,7 +25,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::respuesta.respuesta",
-      "mappedBy": "pregunta"
+      "inversedBy": "pregunta"
     }
   }
 }
